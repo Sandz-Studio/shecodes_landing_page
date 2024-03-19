@@ -1,0 +1,204 @@
+ /* CSS reset code */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+*, *:before, *:after {
+       box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* End of CSS Reset Code */
+
+
+/* Didn't know where to put this stuff */
+h1 {
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h2 {
+    color: #fff;
+    font-weight: 550;
+    margin-bottom: 8px;
+}
+/* Didn't know where to put this stuff */
+ 
+
+
+/* Header Styles */ 
+header {
+    height: 70px;
+}
+
+header a {
+    display: inline-block;
+    color: rgb(76, 23, 125);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 1.6rem 0;
+}
+
+header img {
+    height: 60px;
+    margin: 10px;
+    display: inline-block;
+}
+
+nav {
+    background-color: #fff;
+    height: 70px;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+#header-text h1 {
+    display: inline;
+}
+
+#emphasis {
+    color: #fff;
+    margin-right: 1rem;
+}
+/* End of Header Styles */
+
+
+
+/* Body Styling */
+
+/* Main section */
+.hero {
+    padding: 50px;
+    background-color: #f48fb1;
+}
+
+.header-text {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hero-button{
+    padding: 10px 15px;
+    display: inline-block;
+    color: rgb(51, 12, 86);
+    font: bold;
+    font-weight: 400;
+    border: #fff;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top:10px;
+}   
+
+
+/* columns sectors */
+#column-1 {
+    background-color: #f4d03f; 
+    display: flex; 
+    flex-flow: row wrap;      
+}
+    
+#column-2 { 
+    background-color: #58d68d; 
+    display: flex; 
+    flex-flow: row wrap;     
+}
+    
+#column-3 {
+    background-color: #5dade2; 
+    display: flex;
+    flex-flow: row wrap;    
+}
+
+.column {
+    width:(100%/3);
+    height: 250px;
+    padding: 2%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Copied this here - Styling Our Links */
+section a, .column a {
+    padding: 10px;
+    width: 110px;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #000;
+}
+
+section a {
+background-color: #fff;
+}
+
+.column a {
+background-color: transparent;
+margin-top: 5px;
+}
+/* Copied this here - Styling Our Links*/
+
+
+
+
+
+/* icons selectors */
+.workshopicon {
+    width: 25px;
+    margin: 10px;
+}
+
+/* End of Main Section */
+
+/* Footer selector */
+.container{
+    background-color: #d080ff;
+}
+
+#form{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+   .columns {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+   }
+
+   .column {
+    flex-basis:33%;
+    flex-grow:1;
+   }
+}
